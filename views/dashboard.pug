@@ -1,0 +1,245 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap' rel='stylesheet')
+  title KANBAN
+  link(rel='stylesheet' href='styles.css')
+.body_container
+  header
+    .top_container
+      .header
+        h1 Доска заданий
+      .add_board
+        button.add_board_btn
+          | Добавть доску
+  main
+    .main_container
+      .tasks_container
+        .regular_container
+          .task_container_header
+            .tasks_header
+              | Дела
+            .more_btn_d
+              button.more_btn ...
+          .task_container
+            .task_header_container
+              .task_header_left
+                .circle.regular_circle
+                .task_header
+                  h2 Заголовок
+              .spike
+                img(src='img/spike.png' alt='')
+            .task_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .task_container
+            .task_header_container
+              .task_header_left
+                .circle.regular_circle
+                .task_header
+                  h2 Заголовок
+              .spike
+                img(src='img/leon.png' alt='')
+            .task_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .task_container
+            .task_header_container
+              .task_header_left
+                .circle.regular_circle
+                .task_header
+                  h2 Заголовок
+              .spike
+                img(src='img/poko.png' alt='')
+            .task_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .body1 
+                a.bootn(href='#openModal') Добавить задачу
+                  #openModal.modal
+                    .modal-dialog
+                      .modal-content
+                       .modal-header
+                        h3.modal-title Название задачи
+                        a.close(href='#close' title='Close') х
+                       .modal-body
+                        p участники
+                        img(src='img/poko.png' alt='')
+                        img(src='img/poko.png' alt='')
+                        img(src='img/poko.png' alt='')
+
+
+        .in_progress_container
+          .task_container_header
+            .tasks_header
+              | В процессе
+            .more_btn_d
+              button.more_btn ...
+          .in_progress_container1
+            .in_progress_header_container
+              .in_progress_middle
+                .circle.regular_circle1
+                .in_progress_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .in_progress_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .in_progress_container1
+            .in_progress_header_container
+              .in_progress_middle
+                .circle.regular_circle1
+                .in_progress_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .in_progress_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .in_progress_container1
+            .in_progress_header_container
+              .in_progress_middle
+                .circle.regular_circle1
+                .in_progress_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .in_progress_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .body1 
+                a.bootn(href='#openModal') Добавить задачу
+                  #openModal.modal
+                    .modal-dialog
+                      .modal-content
+                       .modal-header
+                        h3.modal-title Название задачи
+                        a.close(href='#close' title='Close') х
+                       .modal-body
+                        p участники
+                        img(src='img/poko.png' alt='')
+                        img(src='img/poko.png' alt='')
+                        img(src='img/poko.png' alt='')
+
+        .problems_container
+          .task_container_header
+            .tasks_header
+              | Проблемки
+            .more_btn_d
+              button.more_btn ...
+          .problem_container
+            .problem_header_container
+              .problem_right
+                .circle.regular_circle2
+                .problem_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .problem_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .problem_container
+            .problem_header_container
+              .problem_right
+                .circle.regular_circle2
+                .problem_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .problem_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .problem_container
+            .problem_header_container
+              .problem_right
+                .circle.regular_circle2
+                .problem_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .problem_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ... 
+          .body1 
+                a.bootn(href='#openModal') Добавить задачу
+                  #openModal.modal
+                    .modal-dialog
+                      .modal-content
+                       .modal-header
+                        h3.modal-title Название задачи
+                        a.close(href='#close' title='Close') х
+                       .modal-body
+                        p участники
+                        img(src='img/poko.png' alt='')
+                        img(src='img/poko.png' alt='')
+                        img(src='img/poko.png' alt='')
+
+        .gotovos_container
+          .task_container_header
+            .tasks_header
+              | Готово
+            .more_btn_d
+              button.more_btn ...
+          .gotovo_container
+            .gotovo_header_container
+              .gotovo_right
+                .circle.regular_circle3
+                .gotovo_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .gotovo_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .gotovo_container
+            .gotovo_header_container
+              .gotovo_right
+                .circle.regular_circle3
+                .gotovo_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .gotovo_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .gotovo_container
+            .gotovo_header_container
+              .gotovo_right
+                .circle.regular_circle3
+                .gotovo_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .gotovo_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .body1 
+                a.bootn(href='#openModal') Добавить задачу
+                  #openModal.modal
+                    .modal-dialog
+                      .modal-content
+                       .modal-header
+                        h3.modal-title Название задачи
+                        a.close(href='#close' title='Close') х
+                       .modal-body
+                        p участники
+                        img(src='img/poko.png' alt='')
+                        img(src='img/poko.png' alt='')
+                        img(src='img/poko.png' alt='')
+
